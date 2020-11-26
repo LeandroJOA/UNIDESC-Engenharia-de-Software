@@ -23,5 +23,11 @@ div {
   margin: 10px 0px 10px 0px;
 }
 
+.direita {
+  position: absolute;
+  top: 72.5%;
+  right: 22.5%;
+}
+
 
 
