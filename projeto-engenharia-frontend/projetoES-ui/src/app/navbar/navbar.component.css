@@ -1,0 +1,22 @@
+.navbar {
+  padding: 10px 0;
+  background-color: #1e94d2;;
+}
+
+.navbar-toggle {
+  color: white;
+}
+
+.navbar-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 210px;
+  margin: 0;
+  z-index: 9998;
+
+  background-color: #3a3633;
+
+  list-style: none;
+}

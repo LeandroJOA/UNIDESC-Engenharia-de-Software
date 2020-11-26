@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+<h:head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>Estados</title>
+</h:head>
+<h:body style="background-color:#252525;">
+    <!-- Mensagem flutuante -->
+    <p:growl id="mensagem"/>
+
+    <h:form id="formListagem">
+        <p:panel header="Estados - Listagem">
+            <!--emptyMessage - Mensagem quando não há registros
+            Paginator - Opções de troca de pagina
+            value - Ligação entre a tela e o modelo
+            var - Cursor para o desenho das linhas-->
+            <p:dataTable id="tabela" emptyMessage="Nenhum registro encontrado"
+                         paginator="true" value="#{estadoBean.estados}" var="estado" rows="5">
+                <f:facet name="footer">
+                    <!--actionListener - Chamada do metodo para instanciar o objeto, antes da tela de input ser gerada
+                    oncomplete - Tornar visivel a janela flutuante, assim que o evento do botão é finalizado
+                    update - Atuailizar a area do form "formCadastro" e do panelGrid "painel", quando este botão é pressionado, para limpar os campos -->
+                    <p:commandButton value="Novo" actionListener="#{estadoBean.novo}" oncomplete="PF('dialogo').show();"
+                                     update=":formCadastro:painel">
+                        <!-- Reseta estado de validação -->
+                        <f:actionListener type="org.omnifaces.eventlistener.ResetInputAjaxActionListener"/>
+                    </p:commandButton>
+                </f:facet>
+
+                <p:column headerText="Nome" sortBy="#{estado.nome}" filterBy="#{estado.nome}">
+                    <!--outputText - Será impresso nesta coluna o registro "nome", com ajudo do cursor "estado" -->
+                    <h:outputText value="#{estado.nome}"/>
+                </p:column>
+                <p:column headerText="Sigla" sortBy="#{estado.sigla}" filterBy="#{estado.sigla}">
+                    <h:outputText value="#{estado.sigla}"/>
+                </p:column>
+                <p:column headerText="Opções">
+                    <p:commandButton icon="ui-icon-trash" actionListener="#{estadoBean.excluir}"
+                                     update=":mensagem :formListagem:tabela">
+                        <!-- Chamada da janela de confirmação -->
+                        <p:confirm header="Confirmação" message="Deseja excluir o estado?" icon="ui-icon-alert"/>
+                        <f:attribute name="estadoSelecionado" value="#{estado}"/>
+                    </p:commandButton>
+
+                    <p:commandButton icon="ui-icon-pencil" actionListener="#{estadoBean.editar}"
+                                     update=":formCadastro:painel" oncomplete="PF('dialogo').show();">
+                        <f:attribute name="estadoSelecionado" value="#{estado}"/>
+                        <!-- Reseta estado de validação -->
+                        <f:actionListener type="org.omnifaces.eventlistener.ResetInputAjaxActionListener"/>
+                    </p:commandButton>
+                </p:column>
+            </p:dataTable>
+
+            <!-- Janela a ser chamada por um "confirm" -->
+            <p:confirmDialog global="true">
+                <p:commandButton value="Sim" type="button" styleClass="ui-confirmdialog-yes" icon="ui-icon-check"/>
+                <p:commandButton value="Não" type="button" styleClass="ui-confirmdialog-no" icon="ui-icon-close"/>
+            </p:confirmDialog>
+        </p:panel>
+    </h:form>
+
+    <!-- Janela flutuante -->
+    <p:dialog header="Estados - Cadastro" widgetVar="dialogo" draggable="false" resizable="false" modal="true">
+        <h:form id="formCadastro">
+            <!-- value - Ligação entre este input e o controle, armazenando o que é digitado
+            required - Determina campo como obrigatorio
+            requiredMessage - Mensagem de erro quando campo estiver vazio -->
+            <h:panelGrid id="painel" columns="2">
+                <p:outputLabel for="nome" value="Nome:"/>
+                <p:inputText id="nome" maxlength="50" size="30" value="#{estadoBean.estado.nome}" required="true"
+                                 requiredMessage="Campo NOME obrigatorio!"/>
+
+                <p:outputLabel for="sigla" value="Sigla"/>
+                <p:inputText id="sigla" maxlength="2" size="10" value="#{estadoBean.estado.sigla}" required="true"
+                             requiredMessage="Campo SIGLA obrigatorio!"/>
+            </h:panelGrid>
+
+            <h:panelGrid columns="4">
+                <!-- actionListener - Ligação entre este botão e o metodo de salvar
+                update - Redesenhar a tela, adicionando a mensagem flutuante, limpando os campos e atualizando a listagem-->
+                <p:commandButton value="Salvar" actionListener="#{estadoBean.salvar}"
+                                 update=":mensagem :formCadastro:painel :formListagem:tabela"/>
+                <!-- oncomplete - Esconder a janela flutuante, assim que o ação do botão é completada -->
+                <p:commandButton value="Cancelar" oncomplete="PF('dialogo').hide();"/>
+            </h:panelGrid>
+        </h:form>
+    </p:dialog>
+</h:body>
+</html>
