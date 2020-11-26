@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "projetoES-ui"
+  "defaultProject": "projetoES-ui",
+  "cli": {
+    "analytics": "2023ea25-546e-49ce-93ff-3187f96533ce"
+  }
 }
