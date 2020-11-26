@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="612613dc-8d53-4ae5-a831-67edc7d90342" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/artifacts/Projeto_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/artifacts/Projeto_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/dictionaries/Leand.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__com_google_code_gson_gson_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_18.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b31.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_javax_faces_2_2_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_4_0_5_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_hibernate_hibernate_core_4_3_11_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_jboss_jandex_1_1_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_1_3_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_jboss_logging_jboss_logging_annotations_1_2_0_Beta1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_0_0_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_omnifaces_omnifaces_1_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_primefaces_primefaces_5_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__org_primefaces_themes_all_themes_1_0_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.mylyn/repositories.xml.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/org.eclipse.egit.core/GitProjectData.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.logging.aeri.ide.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.j2ee.webservice.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.m2e.discovery.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.ui/OpenTypeHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.m2e.logback.configuration/logback.1.7.0.20160603-1933.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.pde.core/.cache/clean-cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.rse.core/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.rse.core/initializerMarks/org.eclipse.rse.internal.core.RSELocalConnectionInitializer.mark" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-cu6f8b6_32618/FP.local.files_0/node.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-cu6f8b6_32618/H.local_16/node.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-cu6f8b6_32618/node.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.rse.ui/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.ui.intro/introstate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.metadata/version.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.eclipse.wst.xml.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projeto-engenharia-backend/Projeto/.settings/org.hibernate.eclipse.console.prefs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1koExcLeZPCwQdskCCsVdosYAGs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="612613dc-8d53-4ae5-a831-67edc7d90342" name="Default Changelist" comment="" />
+      <created>1606358791879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606358791879</updated>
+      <workItem from="1606358793066" duration="67000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
