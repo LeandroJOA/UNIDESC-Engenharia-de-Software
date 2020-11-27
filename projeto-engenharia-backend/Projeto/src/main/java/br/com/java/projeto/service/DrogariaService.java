@@ -5,7 +5,7 @@ import javax.ws.rs.Path;
 
 //Define o caminho/nome utilizado para a chamada deste serviço
 //http://localhost:8080/Projeto/rest/drogaria (Utilizando o TomCat pelo IntelliJ, não
-//é necessario explicitar o "/Projeto")
+//é necessario explicitar o "/Projeto"
 @Path("drogaria")
 public class DrogariaService {
 

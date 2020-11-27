@@ -7,7 +7,7 @@ import javax.persistence.*;
 @SuppressWarnings("serial")
 @Entity
 public class Produto extends GenericDomain {
-	@Column(length = 80, nullable = false)
+	@Column(length = 200, nullable = false)
 	private String descricao;
 
 	@Column(nullable = false)
@@ -16,9 +16,8 @@ public class Produto extends GenericDomain {
 	@Column(nullable = false, precision = 6, scale = 2)
 	private BigDecimal preco;
 
-	@ManyToOne
-	@JoinColumn(nullable = false)
-	private Fabricante fabricante;
+	@Column(length = 100, nullable = false)
+	private String fabricante;
 
 	//Armazena caminho do arquivo de upload temporario
 	//@Transient - Informa que é um campo temporario
@@ -49,11 +48,11 @@ public class Produto extends GenericDomain {
 		this.preco = preco;
 	}
 
-	public Fabricante getFabricante() {
+	public String getFabricante() {
 		return fabricante;
 	}
 
-	public void setFabricante(Fabricante fabricante) {
+	public void setFabricante(String fabricante) {
 		this.fabricante = fabricante;
 	}
 

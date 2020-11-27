@@ -20,7 +20,7 @@ public class ProdutoDAOTest {
 
 		Produto produto = new Produto();
 		produto.setDescricao("Descrição generica de um remegio");
-		produto.setFabricante(fabricante);
+		produto.setFabricante("Teste");
 		produto.setPreco(new BigDecimal("69.420"));
 		produto.setQuantidade(new Short("1"));
 
@@ -43,8 +43,7 @@ public class ProdutoDAOTest {
 			System.out.println("Descrição do Produto: " + produto.getDescricao());
 			System.out.println("Preço do Produto: R$" + produto.getPreco());
 			System.out.println("Quantidade do Produto: " + produto.getQuantidade());
-			System.out.println("Codigo da Fabricante: " + produto.getFabricante().getCodigo());
-			System.out.println("Descrição da Fabricante: " + produto.getFabricante().getDescricao());
+
 			System.out.println();
 		}
 	}
@@ -61,8 +60,7 @@ public class ProdutoDAOTest {
 		System.out.println("Descrição do Produto: " + produto.getDescricao());
 		System.out.println("Preço do Produto: R$" + produto.getPreco());
 		System.out.println("Quantidade do Produto: " + produto.getQuantidade());
-		System.out.println("Codigo da Fabricante: " + produto.getFabricante().getCodigo());
-		System.out.println("Descrição da Fabricante: " + produto.getFabricante().getDescricao());
+
 	}
 	
 	@Test
@@ -80,8 +78,7 @@ public class ProdutoDAOTest {
 		System.out.println("Descrição do Produto: " + produto.getDescricao());
 		System.out.println("Preço do Produto: R$" + produto.getPreco());
 		System.out.println("Quantidade do Produto: " + produto.getQuantidade());
-		System.out.println("Codigo da Fabricante: " + produto.getFabricante().getCodigo());
-		System.out.println("Descrição da Fabricante: " + produto.getFabricante().getDescricao());
+
 	}
 	
 	@Test
@@ -105,11 +102,10 @@ public class ProdutoDAOTest {
 		System.out.println("Descrição do Produto: " + produto.getDescricao());
 		System.out.println("Preço do Produto: R$" + produto.getPreco());
 		System.out.println("Quantidade do Produto: " + produto.getQuantidade());
-		System.out.println("Codigo da Fabricante: " + produto.getFabricante().getCodigo());
-		System.out.println("Descrição da Fabricante: " + produto.getFabricante().getDescricao());
+
 		
 		produto.setDescricao("Rivotril® é indicado para tratar crises epilépticas e espasmos infantis");
-		produto.setFabricante(fabricante);
+		produto.setFabricante("teste");
 		produto.setPreco(new BigDecimal("1.50"));
 		produto.setQuantidade(new Short("50"));
 		
@@ -120,7 +116,6 @@ public class ProdutoDAOTest {
 		System.out.println("Descrição do Produto: " + produto.getDescricao());
 		System.out.println("Preço do Produto: R$" + produto.getPreco());
 		System.out.println("Quantidade do Produto: " + produto.getQuantidade());
-		System.out.println("Codigo da Fabricante: " + produto.getFabricante().getCodigo());
-		System.out.println("Descrição da Fabricante: " + produto.getFabricante().getDescricao());
+
 	}
 }
