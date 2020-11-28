@@ -1,7 +1,7 @@
 package br.com.java.projeto.service;
 
-import br.com.java.projeto.dao.FabricanteDAO;
-import br.com.java.projeto.domain.Fabricante;
+import br.com.java.projeto.dao.FornecedorDAO;
+import br.com.java.projeto.domain.Fornecedor;
 import com.google.gson.Gson;
 
 import javax.ws.rs.*;
@@ -18,13 +18,13 @@ public class FabricanteService {
     @GET
     public String listar() {
         //Chamada do metodo "Listar" e atribuição à um "ArrayList"
-        FabricanteDAO fabricanteDAO = new FabricanteDAO();
-        List<Fabricante> fabricantes = fabricanteDAO.listar("descricao");
+        FornecedorDAO fornecedorDAO = new FornecedorDAO();
+        List<Fornecedor> fornecedors = fornecedorDAO.listar("descricao");
 
         //Instanciação do Gson
         Gson gson = new Gson();
         //Chamada do metodo "toJson", responsavel por converter um objeto em uma String
-        String json = gson.toJson(fabricantes);
+        String json = gson.toJson(fornecedors);
 
         //Retorna o resultado da conversão da lista "Fabricantes" em "Json"
         return json;
@@ -40,13 +40,13 @@ public class FabricanteService {
     public String buscar(@PathParam("codigo") Long codigo) {
 
         //Chamada do metodo "Buscar" e atribuição à um objeto
-        FabricanteDAO fabricanteDAO = new FabricanteDAO();
-        Fabricante fabricante = fabricanteDAO.buscar(codigo);
+        FornecedorDAO fornecedorDAO = new FornecedorDAO();
+        Fornecedor fornecedor = fornecedorDAO.buscar(codigo);
 
         //Instanciação do Gson
         Gson gson = new Gson();
         //Chamada do metodo "toJson", responsavel por converter um objeto em uma String
-        String json = gson.toJson(fabricante);
+        String json = gson.toJson(fornecedor);
 
         //Retorna o resultado da conversão da lista "Fabricantes" em "Json"
         return json;
@@ -59,15 +59,15 @@ public class FabricanteService {
 
         Gson gson = new Gson();
         //Converte a String de entrada em um objeto do tipo Fabricante e o armazena em um objeto
-        Fabricante fabricante = gson.fromJson(json, Fabricante.class);
+        Fornecedor fornecedor = gson.fromJson(json, Fornecedor.class);
 
         //Chamada do metodo "salvar", passando o objeto convertido
-        FabricanteDAO fabricanteDAO = new FabricanteDAO();
-        fabricanteDAO.salvar(fabricante); //Utilizando o metodo "merge" seria possivel editar um fabricante utilizando
+        FornecedorDAO fornecedorDAO = new FornecedorDAO();
+        fornecedorDAO.salvar(fornecedor); //Utilizando o metodo "merge" seria possivel editar um fabricante utilizando
                                           //o metodo POST
 
         //Conversão do objeto novamente para um Json
-        String jsonSaida = gson.toJson(fabricante);
+        String jsonSaida = gson.toJson(fornecedor);
 
         //Retorno do Json convertido para feedback
         return jsonSaida;
@@ -80,14 +80,14 @@ public class FabricanteService {
 
         Gson gson = new Gson();
         //Converte a String de entrada em um objeto do tipo Fabricante e o armazena em um objeto
-        Fabricante fabricante = gson.fromJson(json, Fabricante.class);
+        Fornecedor fornecedor = gson.fromJson(json, Fornecedor.class);
 
         //Chamada do metodo "editar", passando o objeto convertido
-        FabricanteDAO fabricanteDAO = new FabricanteDAO();
-        fabricanteDAO.editar(fabricante);
+        FornecedorDAO fornecedorDAO = new FornecedorDAO();
+        fornecedorDAO.editar(fornecedor);
 
         //Conversão do objeto novamente para um Json
-        String jsonSaida = gson.toJson(fabricante);
+        String jsonSaida = gson.toJson(fornecedor);
 
         //Retorno do Json convertido para feedback
         return jsonSaida;
@@ -100,17 +100,17 @@ public class FabricanteService {
 
         Gson gson = new Gson();
         //Converte a String de entrada em um objeto do tipo Fabricante e o armazena em um objeto
-        Fabricante fabricante = gson.fromJson(json, Fabricante.class);
+        Fornecedor fornecedor = gson.fromJson(json, Fornecedor.class);
 
         //Busca pelo objeto persistente referente ao codigo passado por input
-        FabricanteDAO fabricanteDAO = new FabricanteDAO();
-        fabricante = fabricanteDAO.buscar(fabricante.getCodigo());
+        FornecedorDAO fornecedorDAO = new FornecedorDAO();
+        fornecedor = fornecedorDAO.buscar(fornecedor.getCodigo());
 
         //Chamada do metodo "editar", passando o objeto convertido
-        fabricanteDAO.excluir(fabricante);
+        fornecedorDAO.excluir(fornecedor);
 
         //Conversão do objeto novamente para um Json
-        String jsonSaida = gson.toJson(fabricante);
+        String jsonSaida = gson.toJson(fornecedor);
 
         //Retorno do Json convertido para feedback
         return jsonSaida;

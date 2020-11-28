@@ -28,10 +28,10 @@
                     <h:outputText value="#{produto.descricao}"/>
                 </p:column>
 
-                <p:column headerText="Fabricante" sortBy="#{produto.fabricante.descricao}"
-                          filterBy="#{produto.fabricante.descricao}">
+                <p:column headerText="Fabricante" sortBy="#{produto.fornecedor.descricao}"
+                          filterBy="#{produto.fornecedor.descricao}">
                     <!--outputText - Utilizando o cursor, é imprimido o conteudo referente a este campo-->
-                    <h:outputText value="#{produto.fabricante.descricao}"/>
+                    <h:outputText value="#{produto.fornecedor.descricao}"/>
                 </p:column>
 
                 <p:column headerText="Preço" sortBy="#{produto.preco}">

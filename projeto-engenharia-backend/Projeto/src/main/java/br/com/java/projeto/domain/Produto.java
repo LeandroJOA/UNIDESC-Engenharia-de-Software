@@ -11,13 +11,14 @@ public class Produto extends GenericDomain {
 	private String descricao;
 
 	@Column(nullable = false)
-	private Short quantidade;
+	private Short estoque;
 
 	@Column(nullable = false, precision = 6, scale = 2)
 	private BigDecimal preco;
 
-	@Column(length = 100, nullable = false)
-	private String fabricante;
+	@ManyToOne
+	@JoinColumn(nullable = false)
+	private Fornecedor fornecedor;
 
 	//Armazena caminho do arquivo de upload temporario
 	//@Transient - Informa que é um campo temporario
@@ -32,12 +33,12 @@ public class Produto extends GenericDomain {
 		this.descricao = descricao;
 	}
 
-	public Short getQuantidade() {
-		return quantidade;
+	public Short getEstoque() {
+		return estoque;
 	}
 
-	public void setQuantidade(Short quantidade) {
-		this.quantidade = quantidade;
+	public void setEstoque(Short estoque) {
+		this.estoque = estoque;
 	}
 
 	public BigDecimal getPreco() {
@@ -48,12 +49,12 @@ public class Produto extends GenericDomain {
 		this.preco = preco;
 	}
 
-	public String getFabricante() {
-		return fabricante;
+	public Fornecedor getFornecedor() {
+		return fornecedor;
 	}
 
-	public void setFabricante(String fabricante) {
-		this.fabricante = fabricante;
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
 	}
 
 	public String getCaminho() {

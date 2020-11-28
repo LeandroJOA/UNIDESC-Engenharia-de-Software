@@ -1,8 +1,8 @@
 package br.com.java.projeto.bean;
 
-import br.com.java.projeto.dao.FabricanteDAO;
+import br.com.java.projeto.dao.FornecedorDAO;
 import br.com.java.projeto.dao.ProdutoDAO;
-import br.com.java.projeto.domain.Fabricante;
+import br.com.java.projeto.domain.Fornecedor;
 import br.com.java.projeto.domain.Produto;
 import org.omnifaces.util.Messages;
 import org.primefaces.event.FileUploadEvent;
@@ -12,7 +12,6 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
 import javax.faces.event.ActionEvent;
-import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
 import java.nio.file.Files;
@@ -31,7 +30,7 @@ public class ProdutoBean implements Serializable {
     //Lista com os dados para a tabela
     private List<Produto> produtos;
     //Lista com os dados para o select
-    private List<Fabricante> fabricantes;
+    private List<Fornecedor> fornecedors;
 
     //Gets e Sets
     public Produto getProduto() {
@@ -50,12 +49,12 @@ public class ProdutoBean implements Serializable {
         this.produtos = produtos;
     }
 
-    public List<Fabricante> getFabricantes() {
-        return fabricantes;
+    public List<Fornecedor> getFabricantes() {
+        return fornecedors;
     }
 
-    public void setFabricantes(List<Fabricante> fabricantes) {
-        this.fabricantes = fabricantes;
+    public void setFabricantes(List<Fornecedor> fornecedors) {
+        this.fornecedors = fornecedors;
     }
 
     //Metodo para listar todos os dados da tabela ao carregar a tela
@@ -81,8 +80,8 @@ public class ProdutoBean implements Serializable {
             produto = new Produto();
 
             //Populando menu de seleção
-            FabricanteDAO fabricanteDAO = new FabricanteDAO();
-            fabricantes = fabricanteDAO.listar();
+            FornecedorDAO fornecedorDAO = new FornecedorDAO();
+            fornecedors = fornecedorDAO.listar();
         } catch (RuntimeException erro) {
             //Mensagem de erro
             Messages.addGlobalError("ERROR ao listar seleção!");
@@ -122,8 +121,8 @@ public class ProdutoBean implements Serializable {
             produtos = produtoDAO.listar();
 
             //Atualização do select
-            FabricanteDAO fabricanteDAO = new FabricanteDAO();
-            fabricantes = fabricanteDAO.listar();
+            FornecedorDAO fornecedorDAO = new FornecedorDAO();
+            fornecedors = fornecedorDAO.listar();
 
             //Mensagem de sucesso
             Messages.addGlobalInfo("Produto salvo com sucesso!");
@@ -172,8 +171,8 @@ public class ProdutoBean implements Serializable {
             produto = (Produto) evento.getComponent().getAttributes().get("produtoSelecionado");
 
             //Populando menu de seleção
-            FabricanteDAO fabricanteDAO = new FabricanteDAO();
-            fabricantes = fabricanteDAO.listar();
+            FornecedorDAO fornecedorDAO = new FornecedorDAO();
+            fornecedors = fornecedorDAO.listar();
 
             //Preenche o caminho do produto atual com seu respectivo arquivo de upload (Caso não exista = null)
             produto.setCaminho("D:/Dev/Java WEB/Uploads/" + produto.getCodigo() + ".png");

@@ -47,9 +47,9 @@
                     <h:outputText value="#{produto.descricao}"/>
                 </p:column>
 
-                <p:column headerText="Quantidade" sortBy="#{produto.quantidade}"
-                          filterBy="#{produto.quantidade}">
-                    <h:outputText value="#{produto.quantidade}"/>
+                <p:column headerText="Quantidade" sortBy="#{produto.estoque}"
+                          filterBy="#{produto.estoque}">
+                    <h:outputText value="#{produto.estoque}"/>
                 </p:column>
 
                 <p:column headerText="Preço" sortBy="#{produto.preco}" filterBy="#{produto.preco}">
@@ -58,9 +58,9 @@
                     </h:outputText>
                 </p:column>
 
-                <p:column headerText="Fabricante" sortBy="#{produto.fabricante.descricao}"
-                          filterBy="#{produto.fabricante.descricao}">
-                    <h:outputText value="#{produto.fabricante.descricao}"/>
+                <p:column headerText="Fabricante" sortBy="#{produto.fornecedor.descricao}"
+                          filterBy="#{produto.fornecedor.descricao}">
+                    <h:outputText value="#{produto.fornecedor.descricao}"/>
                 </p:column>
 
                 <p:column headerText="Opções">
@@ -116,7 +116,7 @@
 
                 <p:outputLabel for="quantidade" value="Quantidade:"/>
                 <p:inputText id="quantidade" maxlength="5" size="10"
-                             value="#{produtoBean.produto.quantidade}" required="true"
+                             value="#{produtoBean.produto.estoque}" required="true"
                              requiredMessage="O campo 'Quantidade' é obrigatório"
                              converterMessage="Informe um valor válido para o campo 'Quantidade'"
                              validatorMessage="Informe um valor entre 0 e 1000 para o campo 'Quantidade'">
@@ -133,14 +133,14 @@
                     <f:convertNumber locale="pt_BR" minFractionDigits="2"/>
                 </p:inputText>
 
-                <p:outputLabel for="fabricante" value="Fabricante:"/>
-                <p:selectOneMenu id="fabricante" filter="true"
-                                 value="#{produtoBean.produto.fabricante}"
+                <p:outputLabel for="fornecedor" value="Fabricante:"/>
+                <p:selectOneMenu id="fornecedor" filter="true"
+                                 value="#{produtoBean.produto.fornecedor}"
                                  converter="omnifaces.SelectItemsConverter" required="true"
                                  requiredMessage="O campo 'Fabricante' é obrigatório">
-                    <f:selectItem noSelectionOption="true" itemLabel="Seleciona um fabricante "/>
-                    <f:selectItems value="#{produtoBean.fabricantes}" var="fabricante"
-                                   itemValue="#{fabricante}" itemLabel="#{fabricante.descricao}"/>
+                    <f:selectItem noSelectionOption="true" itemLabel="Seleciona um fornecedor "/>
+                    <f:selectItems value="#{produtoBean.fornecedors}" var="fornecedor"
+                                   itemValue="#{fornecedor}" itemLabel="#{fornecedor.descricao}"/>
                 </p:selectOneMenu>
 
                 <p:outputLabel for="upload" value="Upload:"/>

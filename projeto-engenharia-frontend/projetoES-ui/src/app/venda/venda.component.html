@@ -40,11 +40,11 @@
         <ng-template pTemplate="body" let-lancamento>
           <!-- Impressão das colunas -->
           <tr>
-            <td class="col-codigo">76893405</td>
-            <td>Miniatura Chevrolet Onix - 15cm</td>
-            <td class="col-estoque">37</td>
-            <td class="col-valor">R$49,90</td>
-            <td class="col-fornecedor">Atacadão Brinquedos</td>
+            <td class="col-codigo">{{lancamento.codigo}}</td>
+            <td>{{lancamento.descricao}}</td>
+            <td class="col-estoque">{{lancamento.estoque}}</td>
+            <td class="col-valor">{{lancamento.preco}}</td>
+            <td class="col-fornecedor">{{lancamento.fornecedor.descricao}}</td>
             <td class="col-acoes">
               <!--
                   pTooltip - Adiciona um mensagem de overlay para os botões
@@ -107,9 +107,10 @@
       <div class="ui-g">
         <div class="ui-g-6">
           <h2>Total - R$679,95</h2>
-          <a class="direita" pButton label="Finalizar Compra"></a>
         </div>
       </div>
+
+      <a pButton label="Finalizar Compra"></a>
   </div>
 </div>
 
