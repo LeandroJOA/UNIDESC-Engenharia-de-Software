@@ -7,16 +7,20 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { DropdownModule } from 'primeng/dropdown';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { VendaComponent } from './venda/venda.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 
 const routes: Routes = [
   {path: 'produto', component: ProdutoComponent },
-  {path: 'venda', component: VendaComponent}
+  {path: 'venda', component: VendaComponent},
+  { path: 'produto/novo', component: CadastroComponent }
 ];
 
 @NgModule({
@@ -24,12 +28,15 @@ const routes: Routes = [
     AppComponent,
     NavbarComponent,
     ProdutoComponent,
-    VendaComponent
+    VendaComponent,
+    CadastroComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     InputTextModule,
+    InputTextareaModule,
+    DropdownModule,
     ButtonModule,
     TableModule,
     TooltipModule,

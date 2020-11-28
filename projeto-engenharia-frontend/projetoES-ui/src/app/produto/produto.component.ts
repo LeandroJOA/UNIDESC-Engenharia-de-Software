@@ -12,7 +12,7 @@ export class ProdutoComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.http.get(`http://localhost:8080/rest/produto`)
       .subscribe(resultado => this.lancamentos = resultado);
   }
