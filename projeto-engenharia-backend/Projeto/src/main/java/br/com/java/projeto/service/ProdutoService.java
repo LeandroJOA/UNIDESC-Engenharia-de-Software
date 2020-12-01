@@ -76,12 +76,11 @@ public class ProdutoService {
     //Metodo PUT para editar um fabricante já existente
     //Url para chamar este serviço - http:localhost:8080/rest/fabricante
     @PUT
-    @Path("{codigo}")
-    public String editar(@PathParam("codigo") Long codigo) {
+    public String editar(String json) {
 
         Gson gson = new Gson();
         //Converte a String de entrada em um objeto do tipo Fabricante e o armazena em um objeto
-        Produto produto = new Produto();
+        Produto produto = gson.fromJson(json, Produto.class);
 
         //Chamada do metodo "editar", passando o objeto convertido
         ProdutoDAO produtoDAO = new ProdutoDAO();

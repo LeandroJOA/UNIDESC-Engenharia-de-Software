@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <div class="container">
-  <form #frm="ngForm" (ngSubmit)="adicionarProduto(frm)">
+  <form>
     <div class="p-grid">
       <div class="p-col-12">
         <h1>Atualizar Produto</h1>
@@ -14,7 +14,8 @@
       </div>
       <div class="p-col-4">
         <label>Fornecedor</label>
-        <input pInputText name="fornecedor" style="width: 100%;" type="text" [(ngModel)]="produto.fornecedor.descricao">
+        <p-dropdown name="fornecedor" [options]="fornecedores" optionLabel="descricao" [(ngModel)]="produto.fornecedor" required
+          [style]="{'width': '100%', 'margin-top': '0px'}"></p-dropdown>
       </div>
       <div class="p-col-4">
         <label>Valor</label>
@@ -28,7 +29,7 @@
       </div>
       <div class="p-col-12">
         <button style="margin-right: 20px;" pButton type="button" label="Salvar"
-          (click)="adicionarProduto(frm)"></button>
+          (click)="atualizarProduto()"></button>
         <a href="http://localhost:4200/produto">Voltar para os produtos</a>
       </div>
     </div>

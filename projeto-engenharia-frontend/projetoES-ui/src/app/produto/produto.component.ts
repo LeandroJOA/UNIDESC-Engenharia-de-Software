@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ConfirmationService } from 'primeng/api';
+import { ConfirmationService, MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-produto',
@@ -13,7 +13,8 @@ export class ProdutoComponent implements OnInit {
 
   constructor(
       private http: HttpClient,
-      private confirmationService: ConfirmationService
+      private confirmationService: ConfirmationService,
+      private messageService: MessageService
     ) { }
 
   ngOnInit(): void {
@@ -24,13 +25,13 @@ export class ProdutoComponent implements OnInit {
 
     this.confirmationService.confirm({
       target: event.target,
-      message: 'Are you sure that you want to proceed?',
-      icon: 'pi pi-exclamation-triangle',
+      message: 'Tem certeza que deseja excluir este produto?',
+      icon: 'pi pi-trash',
       accept: () => {
         this.excluirProduto(produto);
       },
       reject: () => {
-        //reject action
+        this.messageService.add({ severity: 'warn', summary: 'CANCELADO', detail: 'Exclusão cancelada!' });
       }
     });
   }
@@ -46,8 +47,13 @@ export class ProdutoComponent implements OnInit {
         resultado => {
           console.log(resultado);
           this.pesquisarProduto();
+          this.mensagem();
         }
       );
+  }
+
+  mensagem() {
+    this.messageService.add({ severity: 'success', summary: 'SUCESSO', detail: 'Produto Excluido!' });
   }
 
 }
