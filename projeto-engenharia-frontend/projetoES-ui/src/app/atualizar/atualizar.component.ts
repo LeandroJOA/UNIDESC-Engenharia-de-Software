@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-atualizar',
@@ -9,30 +10,55 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AtualizarComponent implements OnInit {
 
-  produto: any;
+  produto: any = {
+    codigo: '',
+    descricao: '',
+    estoque: '',
+    preco: ''
+  };
+  fornecedores: any = [];
 
   constructor(
     private http: HttpClient,
-    private route: ActivatedRoute
-    ) { }
+    private route: ActivatedRoute,
+    private router: Router,
+    private messageService: MessageService
+    ) { this.router = router; }
 
   ngOnInit(): void {
     const codigo = this.route.snapshot.params['codigo'];
-    console.log(codigo);
     this.buscarCodigo(codigo);
+    this.produto.codigo = codigo;
+  }
+
+  mensagem() {
+    this.messageService.add({ severity: 'success', summary: 'SUCESSO', detail: 'Produto alterado!' });
+  }
+
+  mensagemErro() {
+    this.messageService.add({ severity: 'error', summary: 'ERROR', detail: 'Campos obrigatorios não preenchidos!' });
   }
 
   buscarCodigo(codigo) {
     this.http.get(`http://localhost:8080/rest/produto/${codigo}`)
       .subscribe(resultado => this.produto = resultado);
+
+    this.http.get('http://localhost:8080/rest/fornecedor')
+      .subscribe(resultado => this.fornecedores = resultado);
   }
 
-  adicionarProduto(produto) {
-
-    this.http.post('http://localhost:8080/rest/produto', JSON.stringify(this.produto))
+  atualizarProduto() {
+    console.log(this.produto);
+    this.http.put(`http://localhost:8080/rest/produto`, this.produto)
       .subscribe(
         resultado => {
           console.log(resultado);
+          this.mensagem();
+          this.router.navigate(['/', 'produto']);
+        }, erro => {
+          if (erro.status === 500) {
+            this.mensagemErro();
+          }
         }
       );
   }

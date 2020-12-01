@@ -13,7 +13,7 @@
       </div>
       <div class="p-col-4">
         <label>Fornecedor</label>
-        <input pInputText name="fornecedor" style="width: 100%;" type="text">
+        <p-dropdown name="fornecedor" [options]="fornecedores" optionLabel="descricao" [(ngModel)]="produto.fornecedor" required [style]="{'width': '100%', 'margin-top': '0px'}"></p-dropdown>
       </div>
       <div class="p-col-4">
         <label>Valor</label>

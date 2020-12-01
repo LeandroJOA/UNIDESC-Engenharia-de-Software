@@ -8,10 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  cars: any =[];
+  mini: any =[];
 
   constructor(private http: HttpClient) {
-    this.cars = [
+    this.mini = [
       {name: 'assets/miniatura01.jpg'},
       {name: 'assets/miniatura02.jpg'},
       {name: 'assets/miniatura03.jpg'},

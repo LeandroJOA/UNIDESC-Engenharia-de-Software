@@ -1,12 +1,12 @@
 <app-navbar></app-navbar>
 
-<p-carousel [value]="cars" [autoplayInterval]="3000" [circular]="true">
+<p-carousel [value]="mini" [autoplayInterval]="3000" [circular]="true">
   <p-header>
-      <h5>Vertical</h5>
+      <h5>Carousel Teste</h5>
   </p-header>
   <ng-template let-car pTemplate="item">
     <div class="items">
-      <img src="{{ cars.name }}">
+      <img src="{{ mini.name }}">
     </div>
   </ng-template>
 </p-carousel>

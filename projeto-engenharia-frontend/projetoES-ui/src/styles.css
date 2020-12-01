@@ -23,5 +23,8 @@ div {
   margin: 10px 0px 10px 0px;
 }
 
+.ui-dropdown .ui-dropdown-label-container {
+    width: 100% !important;
+}
 
 
