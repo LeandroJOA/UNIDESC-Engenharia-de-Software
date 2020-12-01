@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,16 +6,23 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './cadastro.component.html',
   styleUrls: ['./cadastro.component.css']
 })
-export class CadastroComponent implements OnInit {
+export class CadastroComponent {
 
-  fornecedores = [
-    { name: 'Teste 1', code: 't1' },
-    { name: 'Teste 2', code: 't2' },
-  ];
+  constructor(private http: HttpClient) { }
 
-  constructor() { }
+  produto = {
+    descricao: '',
+    preco: '',
+    estoque: ''
+  };
 
-  ngOnInit(): void {
+  adicionarProduto(produto) {
+
+    this.http.post('http://localhost:8080/rest/produto', JSON.stringify(this.produto))
+      .subscribe(
+      resultado => {
+         console.log(resultado);
+      }
+    );
   }
-
 }

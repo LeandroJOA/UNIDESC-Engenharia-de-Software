@@ -17,7 +17,7 @@ public class Produto extends GenericDomain {
 	private BigDecimal preco;
 
 	@ManyToOne
-	@JoinColumn(nullable = false)
+	@JoinColumn()
 	private Fornecedor fornecedor;
 
 	//Armazena caminho do arquivo de upload temporario

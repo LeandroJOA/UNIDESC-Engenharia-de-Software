@@ -1,7 +1,7 @@
 <app-navbar></app-navbar>
 
 <div class="container">
-  <form action="">
+  <form #frm="ngForm" (ngSubmit)="adicionarProduto(frm)">
     <div class="p-grid">
       <div class="p-col-12">
         <h1>Novo Produto</h1>
@@ -9,22 +9,22 @@
 
       <div class="p-col-12">
         <label>Descrição</label>
-        <textarea pInputTextarea autoResize="autoResize" rows="3" style="width: 100%;"></textarea>
+        <textarea pInputTextarea name="descricao" autoResize="autoResize" rows="3" style="width: 100%;" [(ngModel)]="produto.descricao" required></textarea>
       </div>
       <div class="p-col-4">
         <label>Fornecedor</label>
-        <input pInputText style="width: 100%;" type="text">
+        <input pInputText name="fornecedor" style="width: 100%;" type="text">
       </div>
       <div class="p-col-4">
         <label>Valor</label>
-        <input pInputText style="width: 100%;" type="text" placeholder="0,00">
+        <input pInputText name="preco" style="width: 100%;" type="text" placeholder="0,00" [(ngModel)]="produto.preco" required>
       </div>
       <div class="p-col-4">
         <label>Quantidade</label>
-        <input pInputText style="width: 100%;" type="text">
+        <input pInputText name="estoque" style="width: 100%;" type="text" [(ngModel)]="produto.estoque" required>
       </div>
       <div class="p-col-12">
-        <button style="margin-right: 20px;" pButton type="button" label="Salvar"></button>
+        <button style="margin-right: 20px;" pButton type="button" label="Salvar" (click)="adicionarProduto(frm)"></button>
         <a href="http://localhost:4200/produto">Voltar para os produtos</a>
       </div>
     </div>
