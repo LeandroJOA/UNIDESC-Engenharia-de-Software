@@ -11,14 +11,10 @@ import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
-import { ConfirmationService } from 'primeng/api';
+import { ConfirmationService, MessageService } from 'primeng/api';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
-<<<<<<< HEAD
 import {CarouselModule} from 'primeng/carousel';
-=======
 import { ToastModule } from 'primeng/toast';
-import { MessageService } from 'primeng/api';
->>>>>>> 88f0840ffa1f63e33d1648e2d9974e9c51f7ac1d
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -30,7 +26,7 @@ import { HomeComponent } from './home/home.component';
 
 
 const routes: Routes = [
-  { path: '/', component: HomeComponent},
+  { path: '', component: HomeComponent},
   { path: 'produto', component: ProdutoComponent },
   { path: 'venda', component: VendaComponent },
   { path: 'produto/novo', component: CadastroComponent },
@@ -60,11 +56,8 @@ const routes: Routes = [
     TooltipModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-<<<<<<< HEAD
-    CarouselModule
-=======
     ToastModule,
->>>>>>> 88f0840ffa1f63e33d1648e2d9974e9c51f7ac1d
+    CarouselModule
   ],
   providers: [ConfirmationService, MessageService],
   bootstrap: [AppComponent]
