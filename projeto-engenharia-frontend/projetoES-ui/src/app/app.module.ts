@@ -23,8 +23,9 @@ import { VendaComponent } from './venda/venda.component';
 import { ProdutocadastroComponent } from './produtocadastro/produtocadastro.component';
 import { ProdutoatualizarComponent } from './produtoatualizar/produtoatualizar.component';
 import { HomeComponent } from './home/home.component';
-import { FabricanteListagemComponent } from './fabricante-listagem/fabricante-listagem.component';
-import { FabricanteCadastroComponent } from './fabricanteCadastro/fabricanteCadastro.component';
+import { FornecedorlistagemComponent } from './fornecedorlistagem/fornecedorlistagem.component';
+import { FornecedorcadastroComponent } from './fornecedorcadastro/fornecedorcadastro.component';
+import { FornecedoratualizarComponent } from './fornecedoratualizar/fornecedoratualizar.component';
 
 
 const routes: Routes = [
@@ -33,8 +34,9 @@ const routes: Routes = [
   { path: 'venda', component: VendaComponent },
   { path: 'produto/novo', component: ProdutocadastroComponent },
   { path: 'produto/atualizar/:codigo', component: ProdutoatualizarComponent },
-  { path: 'fornecedor', component: FabricanteListagemComponent },
-  { path: 'fornecedor/novo', component: FabricanteCadastroComponent }
+  { path: 'fornecedor', component: FornecedorlistagemComponent },
+  { path: 'fornecedor/novo', component: FornecedorcadastroComponent },
+  { path: 'fornecedor/atualizar/:codigo', component: FornecedoratualizarComponent }
 ];
 
 @NgModule({
@@ -46,8 +48,9 @@ const routes: Routes = [
     ProdutocadastroComponent,
     ProdutoatualizarComponent,
     HomeComponent,
-    FabricanteListagemComponent,
-    FabricanteCadastroComponent
+    FornecedorlistagemComponent,
+    FornecedorcadastroComponent,
+    FornecedoratualizarComponent
   ],
   imports: [
     BrowserModule,

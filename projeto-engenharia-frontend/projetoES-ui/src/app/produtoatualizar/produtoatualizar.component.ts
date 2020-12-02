@@ -48,7 +48,9 @@ export class ProdutoatualizarComponent implements OnInit {
   }
 
   atualizarProduto() {
-    console.log(this.produto);
+    if (this.produto.descricao === '') {
+      this.produto.descricao = null;
+    }
     this.http.put(`http://localhost:8080/rest/produto`, this.produto)
       .subscribe(
         resultado => {

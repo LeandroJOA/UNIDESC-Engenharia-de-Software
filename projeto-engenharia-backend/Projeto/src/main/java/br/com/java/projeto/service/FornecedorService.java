@@ -16,7 +16,7 @@ public class FornecedorService {
     public String listar() {
         //Chamada do metodo "Listar" e atribuição à um "ArrayList"
         FornecedorDAO fornecedorDAO = new FornecedorDAO();
-        List<Fornecedor> fornecedores = fornecedorDAO.listar("descricao");
+        List<Fornecedor> fornecedores = fornecedorDAO.listar();
 
         //Instanciação do Gson
         Gson gson = new Gson();

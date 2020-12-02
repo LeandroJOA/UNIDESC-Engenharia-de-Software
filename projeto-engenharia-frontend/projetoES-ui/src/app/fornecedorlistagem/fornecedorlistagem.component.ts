@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 import { ConfirmationService, MessageService } from 'primeng/api';
 
 @Component({
-  selector: 'app-fabricante-listagem',
-  templateUrl: './fabricante-listagem.component.html',
-  styleUrls: ['./fabricante-listagem.component.css']
+  selector: 'app-fornecedorlistagem',
+  templateUrl: './fornecedorlistagem.component.html',
+  styleUrls: ['./fornecedorlistagem.component.css']
 })
-export class FabricanteListagemComponent implements OnInit {
+export class FornecedorlistagemComponent implements OnInit {
 
   fornecedores: any = [];
 

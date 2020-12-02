@@ -4,13 +4,13 @@ import { Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
 
 @Component({
-  selector: 'app-fabricanteCadastro',
-  templateUrl: './fabricanteCadastro.component.html',
-  styleUrls: ['./fabricanteCadastro.component.css']
+  selector: 'app-fornecedorcadastro',
+  templateUrl: './fornecedorcadastro.component.html',
+  styleUrls: ['./fornecedorcadastro.component.css']
 })
-export class FabricanteCadastroComponent implements OnInit {
+export class FornecedorcadastroComponent implements OnInit {
 
-  fornecedor: any = [];
+  fornecedor: any = {};
 
   constructor(
     private http: HttpClient,
@@ -24,10 +24,12 @@ export class FabricanteCadastroComponent implements OnInit {
   }
 
   adicionaFornecedor(fornecedor) {
+    if (this.fornecedor.descricao === '') {
+      this.fornecedor.descricao = null;
+    }
     this.http.post('http://localhost:8080/rest/fornecedor', JSON.stringify(this.fornecedor))
       .subscribe(
         resultado => {
-          console.log(this.fornecedor);
           this.mensagem();
           this.router.navigate(['/', 'fornecedor']);
         }, erro => {

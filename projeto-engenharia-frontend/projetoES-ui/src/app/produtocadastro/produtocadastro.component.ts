@@ -30,6 +30,9 @@ export class ProdutocadastroComponent implements OnInit {
 
   adicionarProduto(produto) {
 
+    if (this.produto.descricao === '') {
+      this.produto.descricao = null;
+    }
     this.http.post('http://localhost:8080/rest/produto', JSON.stringify(this.produto))
       .subscribe(
         resultado => {
