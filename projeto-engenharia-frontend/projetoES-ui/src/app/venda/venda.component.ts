@@ -13,7 +13,7 @@ export class VendaComponent {
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
-    this.http.get(`http://localhost:8080/rest/produto`)
+    this.http.get(`http://localhost:8080/rest/produtolistagem`)
       .subscribe(resultado => this.lancamentos = resultado);
   }
 

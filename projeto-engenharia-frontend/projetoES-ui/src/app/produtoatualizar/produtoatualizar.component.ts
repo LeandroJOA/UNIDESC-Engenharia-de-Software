@@ -5,10 +5,10 @@ import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-atualizar',
-  templateUrl: './atualizar.component.html',
-  styleUrls: ['./atualizar.component.css']
+  templateUrl: './produtoatualizar.component.html',
+  styleUrls: ['./produtoatualizar.component.css']
 })
-export class AtualizarComponent implements OnInit {
+export class ProdutoatualizarComponent implements OnInit {
 
   produto: any = {
     codigo: '',
@@ -52,7 +52,6 @@ export class AtualizarComponent implements OnInit {
     this.http.put(`http://localhost:8080/rest/produto`, this.produto)
       .subscribe(
         resultado => {
-          console.log(resultado);
           this.mensagem();
           this.router.navigate(['/', 'produto']);
         }, erro => {

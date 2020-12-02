@@ -4,10 +4,10 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-produto',
-  templateUrl: './produto.component.html',
-  styleUrls: ['./produto.component.css']
+  templateUrl: './produtolistagem.component.html',
+  styleUrls: ['./produtolistagem.component.css']
 })
-export class ProdutoComponent implements OnInit {
+export class ProdutolistagemComponent implements OnInit {
 
   produtos: any = [];
 
@@ -45,7 +45,6 @@ export class ProdutoComponent implements OnInit {
     this.http.delete(`http://localhost:8080/rest/produto/${produto.codigo}`)
       .subscribe(
         resultado => {
-          console.log(resultado);
           this.pesquisarProduto();
           this.mensagem();
         }

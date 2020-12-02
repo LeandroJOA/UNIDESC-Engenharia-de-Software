@@ -5,10 +5,10 @@ import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-cadastro',
-  templateUrl: './cadastro.component.html',
-  styleUrls: ['./cadastro.component.css']
+  templateUrl: './produtocadastro.component.html',
+  styleUrls: ['./produtocadastro.component.css']
 })
-export class CadastroComponent implements OnInit {
+export class ProdutocadastroComponent implements OnInit {
 
   produto: any = {
     descricao: '',
@@ -33,7 +33,6 @@ export class CadastroComponent implements OnInit {
     this.http.post('http://localhost:8080/rest/produto', JSON.stringify(this.produto))
       .subscribe(
         resultado => {
-          console.log(resultado);
           this.mensagem();
           this.router.navigate(['/', 'produto']);
         }, erro => {

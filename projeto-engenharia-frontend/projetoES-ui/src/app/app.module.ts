@@ -13,39 +13,38 @@ import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { ConfirmationService } from 'primeng/api';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
-<<<<<<< HEAD
-import {CarouselModule} from 'primeng/carousel';
-=======
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
->>>>>>> 88f0840ffa1f63e33d1648e2d9974e9c51f7ac1d
+import { CarouselModule } from 'primeng/carousel';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProdutoComponent } from './produto/produto.component';
+import { ProdutolistagemComponent } from './produtolistagem/produtolistagem.component';
 import { VendaComponent } from './venda/venda.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
-import { AtualizarComponent } from './atualizar/atualizar.component';
+import { ProdutocadastroComponent } from './produtocadastro/produtocadastro.component';
+import { ProdutoatualizarComponent } from './produtoatualizar/produtoatualizar.component';
 import { HomeComponent } from './home/home.component';
+import { FabricanteListagemComponent } from './fabricante-listagem/fabricante-listagem.component';
 
 
 const routes: Routes = [
-  { path: '/', component: HomeComponent},
-  { path: 'produto', component: ProdutoComponent },
+  { path: '', component: HomeComponent},
+  { path: 'produto', component: ProdutolistagemComponent },
   { path: 'venda', component: VendaComponent },
-  { path: 'produto/novo', component: CadastroComponent },
-  { path: 'produto/atualizar/:codigo', component: AtualizarComponent }
+  { path: 'produto/novo', component: ProdutocadastroComponent },
+  { path: 'produto/atualizar/:codigo', component: ProdutoatualizarComponent }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProdutoComponent,
+    ProdutolistagemComponent,
     VendaComponent,
-    CadastroComponent,
-    AtualizarComponent,
-    HomeComponent
+    ProdutocadastroComponent,
+    ProdutoatualizarComponent,
+    HomeComponent,
+    FabricanteListagemComponent
   ],
   imports: [
     BrowserModule,
@@ -60,11 +59,8 @@ const routes: Routes = [
     TooltipModule,
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
-<<<<<<< HEAD
-    CarouselModule
-=======
     ToastModule,
->>>>>>> 88f0840ffa1f63e33d1648e2d9974e9c51f7ac1d
+    CarouselModule
   ],
   providers: [ConfirmationService, MessageService],
   bootstrap: [AppComponent]
