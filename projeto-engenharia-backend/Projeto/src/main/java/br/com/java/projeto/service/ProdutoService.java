@@ -19,7 +19,7 @@ public class ProdutoService {
     public String listar() {
         //Chamada do metodo "Listar" e atribuição à um "ArrayList"
         ProdutoDAO produtoDAO = new ProdutoDAO();
-        List<Produto> produtos = produtoDAO.listar("descricao");
+        List<Produto> produtos = produtoDAO.listar();
 
         //Instanciação do Gson
         Gson gson = new Gson();

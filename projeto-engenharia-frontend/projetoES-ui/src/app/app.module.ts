@@ -31,7 +31,8 @@ const routes: Routes = [
   { path: 'produto', component: ProdutolistagemComponent },
   { path: 'venda', component: VendaComponent },
   { path: 'produto/novo', component: ProdutocadastroComponent },
-  { path: 'produto/atualizar/:codigo', component: ProdutoatualizarComponent }
+  { path: 'produto/atualizar/:codigo', component: ProdutoatualizarComponent },
+  { path: 'fornecedor', component: FabricanteListagemComponent }
 ];
 
 @NgModule({
