@@ -1,12 +1,13 @@
 <app-navbar></app-navbar>
 
-<p-carousel [value]="mini" [autoplayInterval]="3000" [circular]="true">
-  <p-header>
-      <h5>Carousel Teste</h5>
-  </p-header>
-  <ng-template let-car pTemplate="item">
-    <div class="items">
-      <img src="{{ mini.name }}">
-    </div>
-  </ng-template>
-</p-carousel>
+<div id="container">
+  <p-carousel class="slides-wrapper" [value]="mini" [autoplayInterval]="3000" [circular]="true">
+    <p-header>
+      <h1 style="text-align: center;" margin-bottom="10px">Bem vindo!</h1>
+    </p-header>
+    <ng-template #item let-item let-i="index" let-mini pTemplate="mini">
+      <div>
+        <img class="items" [src]="mini.name">
+      </div>
+    </ng-template>
+  </p-carousel>
