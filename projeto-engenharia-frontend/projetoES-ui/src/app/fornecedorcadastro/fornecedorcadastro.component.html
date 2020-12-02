@@ -9,7 +9,7 @@
 
       <div class="p-col-12">
         <label>Descrição</label>
-        <input pInputTextarea name="descricao" type="text" style="width: 100%;" [(ngModel)]="fornecedor.descricao" required>
+        <textarea pInputTextarea name="descricao" type="text" rows="3" autoResize="autoResize"  style="width: 100%;" [(ngModel)]="fornecedor.descricao" required></textarea>
       </div>
       <div class="p-col-12">
         <button style="margin-right: 20px;" pButton type="button" label="Salvar" (click)="adicionaFornecedor(frm)"></button>
