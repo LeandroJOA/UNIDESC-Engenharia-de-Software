@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  <form #frm="ngForm" (ngSubmit)="adicionaFornecedor(frm)">
+    <div class="p-grid">
+      <div class="p-col-12">
+        <h1>Novo Fornecedor</h1>
+      </div>
+
+      <div class="p-col-12">
+        <label>Descrição</label>
+        <input pInputTextarea name="descricao" type="text" style="width: 100%;" [(ngModel)]="fornecedor.descricao" required>
+      </div>
+      <div class="p-col-12">
+        <button style="margin-right: 20px;" pButton type="button" label="Salvar" (click)="adicionaFornecedor(frm)"></button>
+        <a href="http://localhost:4200/fornecedor">Voltar para Fornecedores</a>
+      </div>
+    </div>
+  </form>
+</div>

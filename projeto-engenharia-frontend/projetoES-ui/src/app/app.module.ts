@@ -24,6 +24,7 @@ import { ProdutocadastroComponent } from './produtocadastro/produtocadastro.comp
 import { ProdutoatualizarComponent } from './produtoatualizar/produtoatualizar.component';
 import { HomeComponent } from './home/home.component';
 import { FabricanteListagemComponent } from './fabricante-listagem/fabricante-listagem.component';
+import { FabricanteCadastroComponent } from './fabricanteCadastro/fabricanteCadastro.component';
 
 
 const routes: Routes = [
@@ -32,7 +33,8 @@ const routes: Routes = [
   { path: 'venda', component: VendaComponent },
   { path: 'produto/novo', component: ProdutocadastroComponent },
   { path: 'produto/atualizar/:codigo', component: ProdutoatualizarComponent },
-  { path: 'fornecedor', component: FabricanteListagemComponent }
+  { path: 'fornecedor', component: FabricanteListagemComponent },
+  { path: 'fornecedor/novo', component: FabricanteCadastroComponent }
 ];
 
 @NgModule({
@@ -44,7 +46,8 @@ const routes: Routes = [
     ProdutocadastroComponent,
     ProdutoatualizarComponent,
     HomeComponent,
-    FabricanteListagemComponent
+    FabricanteListagemComponent,
+    FabricanteCadastroComponent
   ],
   imports: [
     BrowserModule,
