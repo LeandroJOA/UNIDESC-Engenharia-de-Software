@@ -10,7 +10,7 @@ import { MessageService } from 'primeng/api';
 })
 export class FabricanteCadastroComponent implements OnInit {
 
-  fornecedor: any = [];
+  fornecedor: any = {};
 
   constructor(
     private http: HttpClient,
