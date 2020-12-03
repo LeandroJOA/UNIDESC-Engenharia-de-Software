@@ -8,17 +8,13 @@
 }
 
 .col-valor {
-  width: 100px;
+  width: 150px;
 
 }
 
 .col-acoes {
   width: 120px;
   margin: 0px 5px;
-}
-
-.col-fornecedor {
-  width: 300px;
 }
 
 .col-codigo {

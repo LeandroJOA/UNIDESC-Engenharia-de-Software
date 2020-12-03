@@ -31,7 +31,7 @@ export class FornecedorcadastroComponent implements OnInit {
       .subscribe(
         resultado => {
           this.mensagem();
-          this.router.navigate(['/', 'fornecedor']);
+          this.router.navigate(['/', 'fornecedores']);
         }, erro => {
           if (erro.status === 500) {
             this.mensagemErro();

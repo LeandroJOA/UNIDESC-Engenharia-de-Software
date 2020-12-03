@@ -2,13 +2,10 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(32, 38, 46);
+  background-color: hsla(201, 75%, 47%, 0.070);
   font-size: larger;
 }
 
-.titulo{
-  color:#fff;
- }
 
 label {
   font-weight: bold;
@@ -39,4 +36,14 @@ a {
   font-size: 30px;
   margin-top: -10px;
 }
+
+.interface {
+  height: 925px;
+  width: 61%;
+  background-color: white;
+  margin: 0px auto auto auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+}
+
 

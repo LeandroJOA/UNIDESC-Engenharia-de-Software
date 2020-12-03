@@ -1,14 +1,41 @@
 <app-navbar></app-navbar>
 
-<div id="container">
-  <p-carousel class="slides-wrapper" [value]="mini" [autoplayInterval]="3000" [circular]="true">
-    <p-header>
-      <h1 style="text-align: center;" >Bem vindo</h1>
-      <h2 style="text-align: center;" margin-top="01px">A venda de miniaturas</h2>
-    </p-header>
-    <ng-template #item let-item let-i="index" let-mini pTemplate="mini">
-      <div>
-        <img class="items" [src]="mini.name">
-      </div>
-    </ng-template>
-  </p-carousel>
+<!-- <div class="container">
+  <div class="p-grid">
+    <div class="p-col-3"></div>
+    <div class="p-col-6">
+      <p-carousel class="slides-wrapper" [value]="mini" [autoplayInterval]="3000" [circular]="true">
+        <p-header>
+          <h1 style="text-align: center;" >Bem-Vindo</h1>
+          <br>
+          <h3 style="text-align: center;" margin-top="01px">Alguns de nossos produtos!</h3>
+        </p-header>
+        <ng-template #item let-item let-i="index" let-mini pTemplate="mini">
+          <div>
+            <img class="items" [src]="mini.name">
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+    <div class="p-col-3"></div>
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="p-grid p-fluid">
+    <div class="p-col-12">
+      <h2 style="text-align: center;">Nos avalie!</h2>
+      <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
+    </div>
+    <div class="p-col-12">
+      <p-rating cancel="false"></p-rating>
+    </div>
+    <div class="card">
+
+      <p-captcha siteKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" (onResponse)="showResponse($event)"></p-captcha>
+    </div>
+    <div class="p-col-6">
+      <button pButton label="Enviar feedback"></button>
+    </div>
+  </div>
+</div>

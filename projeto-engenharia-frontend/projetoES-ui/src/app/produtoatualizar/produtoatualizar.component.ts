@@ -55,7 +55,7 @@ export class ProdutoatualizarComponent implements OnInit {
       .subscribe(
         resultado => {
           this.mensagem();
-          this.router.navigate(['/', 'produto']);
+          this.router.navigate(['/', 'produtos']);
         }, erro => {
           if (erro.status === 500) {
             this.mensagemErro();

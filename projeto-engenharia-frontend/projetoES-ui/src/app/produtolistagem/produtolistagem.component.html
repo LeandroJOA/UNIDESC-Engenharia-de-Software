@@ -7,8 +7,8 @@
   pButton - Diretiva do primeNG para butões
 -->
 <div class="container">
-  <div class="ui-g">
-    <div class="ui-g-12">
+  <div class="p-grid">
+    <div class="p-col-12">
       <h2>Produtos</h2>
     </div>
   </div>
@@ -18,8 +18,8 @@
     pTemplate - Diretiva que indica a parte da tabela
     let-lancamento - Cria uma variavel "lancamento" para cada item em "Lancamentos", definido no "[value]"
   -->
-  <div class="ui-g">
-    <div class="ui-g-12">
+  <div class="p-grid">
+    <div class="p-col-12">
       <!--
           [paginator] - Habilita paginação
           [rows] - Define o maximo de linhas por pagina como 2
@@ -44,7 +44,7 @@
             <th class="col-fornecedor" pSortableColumn="fornecedor.descricao"><span class="cabecalho">Fornecedor</span>
               <p-sortIcon field="fornecedor.descricao"></p-sortIcon>
             </th>
-            <th class="col-acoes"></th>
+            <th class="col-acoes" style="text-align: center;"><i class="pi pi-sliders-h"></i></th>
           </tr>
         </ng-template>
         <ng-template pTemplate="body" let-produto>
@@ -60,7 +60,7 @@
                   pTooltip - Adiciona um mensagem de overlay para os botões
                   tooltipPosition - Define que esta mensagem irá aparecer acima do botão
                  -->
-              <a style="margin: 0px 5px;" pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top" href="http://localhost:4200/produto/atualizar/{{produto.codigo}}"></a>
+              <a style="margin: 0px 5px;" pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top" href="http://localhost:4200/produtos/atualizar/{{produto.codigo}}"></a>
               <button pButton icon="pi pi-trash" pTooltip="Excluir" tooltipPosition="top" (click)="confirmarExclusao(produto)"></button>
             </td>
           </tr>
@@ -68,8 +68,8 @@
       </p-table>
     </div>
 
-    <div class="ui-g-12">
-      <a pButton label="Novo Produto" href="http://localhost:4200/produto/novo"></a>
+    <div class="p-col-12">
+      <a pButton label="Novo Produto" href="http://localhost:4200/produtos/novo"></a>
     </div>
   </div>
 </div>

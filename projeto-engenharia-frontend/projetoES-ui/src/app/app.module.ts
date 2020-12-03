@@ -16,6 +16,8 @@ import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { ToastModule } from 'primeng/toast';
 import { CarouselModule } from 'primeng/carousel';
 import { InputNumberModule } from 'primeng/inputnumber';
+import { RatingModule } from 'primeng/rating';
+import { CaptchaModule } from 'primeng/captcha';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -31,13 +33,13 @@ import { FornecedoratualizarComponent } from './fornecedoratualizar/fornecedorat
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
-  { path: 'produto', component: ProdutolistagemComponent },
+  { path: 'produtos', component: ProdutolistagemComponent },
   { path: 'venda', component: VendaComponent },
-  { path: 'produto/novo', component: ProdutocadastroComponent },
-  { path: 'produto/atualizar/:codigo', component: ProdutoatualizarComponent },
-  { path: 'fornecedor', component: FornecedorlistagemComponent },
-  { path: 'fornecedor/novo', component: FornecedorcadastroComponent },
-  { path: 'fornecedor/atualizar/:codigo', component: FornecedoratualizarComponent }
+  { path: 'produtos/novo', component: ProdutocadastroComponent },
+  { path: 'produtos/atualizar/:codigo', component: ProdutoatualizarComponent },
+  { path: 'fornecedores', component: FornecedorlistagemComponent },
+  { path: 'fornecedores/novo', component: FornecedorcadastroComponent },
+  { path: 'fornecedores/atualizar/:codigo', component: FornecedoratualizarComponent }
 ];
 
 @NgModule({
@@ -68,7 +70,9 @@ const routes: Routes = [
     BrowserAnimationsModule,
     ToastModule,
     CarouselModule,
-    InputNumberModule
+    InputNumberModule,
+    RatingModule,
+    CaptchaModule
   ],
   providers: [ConfirmationService, MessageService],
   bootstrap: [AppComponent]

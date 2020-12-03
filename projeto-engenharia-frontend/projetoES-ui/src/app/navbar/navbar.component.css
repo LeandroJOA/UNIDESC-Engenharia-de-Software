@@ -1,33 +1,31 @@
 .navbar {
-  padding: 10px 0;
+  padding: 6px 0;
   height: 52px;
-  background-color: rgb(63, 75, 91);
+  background-color: #1e94d2;
 }
 
 .barra{
-  z-index: 150000;
+  margin: 0px 4px;
 }
 
 .navbar-toggle {
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
-.botton{
-  font-size: 30px;
+.botao{
+  font-size: 20px;
 }
 
 .navbar-menu {
   position: fixed;
-  top: 52px;
+  top: 0;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 210px;
   margin: 0;
   padding: 0;
   z-index: 100000;
-  opacity: 80%;
-
-  background-color:rgb(63, 75, 91);
+  background-color: rgba(58, 54, 51, .85);
 
   list-style: none;
 
@@ -38,6 +36,7 @@
   margin-bottom: 15px;
   border-bottom:1px solid #e9e3e3;
 
+  text-align: center;
   text-decoration: uppercase;
   font-weight: bold;
   color:#fff;
@@ -45,19 +44,19 @@
 }
 
 .navbar-menuitem{
- padding: 15px;
- font-weight: bold; 
+  padding: 15px;
+  font-weight: bold;
 }
 
 .navbar-menuitem a{
-  color: #e6dddd;
+  color: #c0bbb7;
   text-decoration: none;
-   
+  font-weight: bold;
  }
 
  .navbar-menuitem a:hover{
-   color: rgb(255, 255, 255);
+   color: #fff;
 
  }
- 
- 
+
+

@@ -38,7 +38,7 @@ export class ProdutocadastroComponent implements OnInit {
         resultado => {
           console.log(this.produto);
           this.mensagem();
-          this.router.navigate(['/', 'produto']);
+          this.router.navigate(['/', 'produtos']);
         }, erro => {
           if (erro.status === 500) {
             console.log(this.produto);
