@@ -1,18 +1,17 @@
 <nav class="navbar">
-  <div class="container">
+  <div class="container barra">
     <div class="ui-g">
       <div class="ui-g-12">
-        <a href="javascript:;"class="navbar-toggle" onclick="existindoMenu =!existindoMenu" >
-          <i class="pi pi-bars"></i>
+        <a href="javascript:;"class="navbar-toggle" on-click="existindoMenu = !existindoMenu" >
+          <i class="pi pi-bars botton"></i>
         </a>
       </div>
     </div>
   </div>
 
-  <ul class="navbar-menu">
-    <li class="navbar-usuario">Leandro Junio</li>
+  <ul class="navbar-menu" [hidden]="!existindoMenu" >
+    <li class="navbar-usuario navbar-menuitem" > <a href="#">HOME</a></li>
     <li class="navbar-menuitem"><a href="#">Produtos</a></li>
-    <li class="navbar-menuitem" > <a href="#">Vendas</a></li>
-    <li class="navbar-menuitem"><a href="#">Logout</a></li>
+    <li class="navbar-menuitem" > <a href="#">Fornecedores</a></li>
   </ul>
 </nav>
