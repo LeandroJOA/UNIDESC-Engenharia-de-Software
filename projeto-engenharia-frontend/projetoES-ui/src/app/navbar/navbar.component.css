@@ -1,22 +1,63 @@
 .navbar {
   padding: 10px 0;
-  background-color: #1e94d2;;
+  height: 52px;
+  background-color: rgb(63, 75, 91);
+}
+
+.barra{
+  z-index: 150000;
 }
 
 .navbar-toggle {
-  color: white;
+  color: rgb(255, 255, 255);
+}
+
+.botton{
+  font-size: 30px;
 }
 
 .navbar-menu {
   position: fixed;
-  top: 0;
+  top: 52px;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 210px;
   margin: 0;
-  z-index: 9998;
+  padding: 0;
+  z-index: 100000;
+  opacity: 80%;
 
-  background-color: #3a3633;
+  background-color:rgb(63, 75, 91);
 
   list-style: none;
+
 }
+
+.navbar-usuario{
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom:1px solid #e9e3e3;
+
+  text-decoration: uppercase;
+  font-weight: bold;
+  color:#fff;
+
+}
+
+.navbar-menuitem{
+ padding: 15px;
+ font-weight: bold; 
+}
+
+.navbar-menuitem a{
+  color: #e6dddd;
+  text-decoration: none;
+   
+ }
+
+ .navbar-menuitem a:hover{
+   color: rgb(255, 255, 255);
+
+ }
+ 
+ 
