@@ -25,12 +25,16 @@
           [rows] - Define o maximo de linhas por pagina como 2
           [responsive] - Adiciona responsividade a esta tabela, melhorando sua vizualiação em resoluções menores
          -->
-      <p-table [value]="fornecedores" [paginator]="true" [rows]="5" [responsive]="true">
+      <p-table [value]="fornecedores" [paginator]="true" [rows]="5" [responsive]="true" styleClass="p-datatable-gridlines">
         <ng-template pTemplate="header">
           <!-- Impressão dos cabeçalhos -->
           <tr>
-            <th class="col-codigo"><span class="cabecalho">Codigo</span></th>
-            <th><span class="cabecalho">Descrição</span></th>
+            <th class="col-codigo" pSortableColumn="codigo"><span class="cabecalho">Codigo</span>
+              <p-sortIcon field="codigo"></p-sortIcon>
+            </th>
+            <th pSortableColumn="descricao"><span class="cabecalho">Descrição</span>
+              <p-sortIcon field="descricao"></p-sortIcon>
+            </th>
             <th class="col-acoes"></th>
           </tr>
         </ng-template>

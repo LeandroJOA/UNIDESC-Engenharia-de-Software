@@ -2,36 +2,35 @@
 
 <div class="container">
   <form>
-    <div class="p-grid">
+    <div class="p-grid p-fluid">
       <div class="p-col-12">
         <h1>Atualizar Produto</h1>
       </div>
 
       <div class="p-col-12">
         <label>Descrição</label>
-        <textarea pInputTextarea name="descricao" autoResize="autoResize" rows="3" style="width: 100%;"
+        <textarea pInputTextarea name="descricao" autoResize="autoResize" rows="3"
          [(ngModel)]="produto.descricao" required></textarea>
       </div>
       <div class="p-col-4">
         <label>Fornecedor</label>
         <p-dropdown name="fornecedor" [options]="fornecedores" optionLabel="descricao" [(ngModel)]="produto.fornecedor" required
-          [style]="{'width': '100%', 'margin-top': '0px'}"></p-dropdown>
+          [style]="{'margin-top': '0px'}"></p-dropdown>
       </div>
       <div class="p-col-4">
         <label>Valor</label>
-        <input pInputText name="preco" style="width: 100%;" type="text" placeholder="0,00" [(ngModel)]="produto.preco"
-          required>
+        <p-inputNumber name="preco" [(ngModel)]="produto.preco" mode="currency" currency="BRL" locale="pt-BR"
+           required></p-inputNumber>
       </div>
       <div class="p-col-4">
         <label>Quantidade</label>
-        <input pInputText name="estoque" style="width: 100%;" type="text" [(ngModel)]="produto.estoque"
+        <input pInputText name="estoque" type="text" [(ngModel)]="produto.estoque"
            required>
       </div>
-      <div class="p-col-12">
-        <button style="margin-right: 20px;" pButton type="button" label="Salvar"
-          (click)="atualizarProduto()"></button>
-        <a href="http://localhost:4200/produto">Voltar para os produtos</a>
-      </div>
+    </div>
+    <div class="p-col-12">
+      <button style="margin-right: 20px;" pButton type="button" label="Salvar" (click)="atualizarProduto()"></button>
+      <a href="http://localhost:4200/produto">Voltar para os produtos</a>
     </div>
   </form>
 </div>

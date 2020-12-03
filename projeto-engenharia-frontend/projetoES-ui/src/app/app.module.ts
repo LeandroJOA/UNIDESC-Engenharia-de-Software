@@ -15,6 +15,7 @@ import { ConfirmationService, MessageService } from 'primeng/api';
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
 import { ToastModule } from 'primeng/toast';
 import { CarouselModule } from 'primeng/carousel';
+import { InputNumberModule } from 'primeng/inputnumber';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -66,7 +67,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     BrowserAnimationsModule,
     ToastModule,
-    CarouselModule
+    CarouselModule,
+    InputNumberModule
   ],
   providers: [ConfirmationService, MessageService],
   bootstrap: [AppComponent]

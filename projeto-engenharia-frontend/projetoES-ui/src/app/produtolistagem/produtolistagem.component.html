@@ -29,11 +29,21 @@
         <ng-template pTemplate="header">
           <!-- Impressão dos cabeçalhos -->
           <tr>
-            <th class="col-codigo"><span class="cabecalho">Codigo</span></th>
-            <th><span class="cabecalho">Descrição</span></th>
-            <th class="col-estoque"><span class="cabecalho">Estoque</span></th>
-            <th class="col-valor"><span class="cabecalho">Valor</span></th>
-            <th class="col-fornecedor"><span class="cabecalho">Fornecedor</span></th>
+            <th class="col-codigo" pSortableColumn="codigo"><span class="cabecalho">Codigo</span>
+              <p-sortIcon field="codigo"></p-sortIcon>
+            </th>
+            <th pSortableColumn="descricao"><span class="cabecalho">Descrição</span>
+              <p-sortIcon field="descricao"></p-sortIcon>
+            </th>
+            <th class="col-estoque" pSortableColumn="estoque"><span class="cabecalho">Estoque</span>
+              <p-sortIcon field="estoque"></p-sortIcon>
+            </th>
+            <th class="col-valor" pSortableColumn="preco"><span class="cabecalho">Valor</span>
+              <p-sortIcon field="preco"></p-sortIcon>
+            </th>
+            <th class="col-fornecedor" pSortableColumn="fornecedor.descricao"><span class="cabecalho">Fornecedor</span>
+              <p-sortIcon field="fornecedor.descricao"></p-sortIcon>
+            </th>
             <th class="col-acoes"></th>
           </tr>
         </ng-template>

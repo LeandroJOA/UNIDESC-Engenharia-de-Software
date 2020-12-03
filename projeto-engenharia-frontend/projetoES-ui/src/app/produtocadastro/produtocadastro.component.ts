@@ -36,10 +36,12 @@ export class ProdutocadastroComponent implements OnInit {
     this.http.post('http://localhost:8080/rest/produto', JSON.stringify(this.produto))
       .subscribe(
         resultado => {
+          console.log(this.produto);
           this.mensagem();
           this.router.navigate(['/', 'produto']);
         }, erro => {
           if (erro.status === 500) {
+            console.log(this.produto);
             this.mensagemErro();
           }
         }
