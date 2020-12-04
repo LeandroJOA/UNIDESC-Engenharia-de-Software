@@ -1,12 +1,12 @@
 <app-navbar></app-navbar>
 
-<!-- <div class="container">
+<div class="container">
   <div class="p-grid">
     <div class="p-col-3"></div>
     <div class="p-col-6">
       <p-carousel class="slides-wrapper" [value]="mini" [autoplayInterval]="3000" [circular]="true">
         <p-header>
-          <h1 style="text-align: center;" >Bem-Vindo</h1>
+          <h1 style="text-align: center;">Bem-Vindo</h1>
           <br>
           <h3 style="text-align: center;" margin-top="01px">Alguns de nossos produtos!</h3>
         </p-header>
@@ -19,23 +19,30 @@
     </div>
     <div class="p-col-3"></div>
   </div>
-</div> -->
+</div>
 
 <div class="container">
   <div class="p-grid p-fluid">
     <div class="p-col-12">
       <h2 style="text-align: center;">Nos avalie!</h2>
-      <textarea [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
+      <textarea [value]="feedback" [rows]="5" [cols]="30" pInputTextarea autoResize="autoResize"></textarea>
     </div>
-    <div class="p-col-12">
-      <p-rating cancel="false"></p-rating>
+    <div class="p-col-3" style="margin-top: -15px;">
+      <p-captcha siteKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></p-captcha>
     </div>
-    <div class="card">
+    <div class="p-col-9" style="padding-left: 40px;">
+      <p-rating cancel="true"></p-rating>
+    </div>
+    <div class="p-col-5" style="margin-top: -10px;">
+      <button pButton label="Enviar feedback" (click)="showResponse($event)"></button>
+    </div>
+  </div>
+</div>
 
-      <p-captcha siteKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI" (onResponse)="showResponse($event)"></p-captcha>
-    </div>
-    <div class="p-col-6">
-      <button pButton label="Enviar feedback"></button>
-    </div>
+
+<div class="footer">
+  <div class="sociais">
+    <i class="pi pi-github" style="font-size: 60px;"></i>
+    <i class="pi pi-discord" style="font-size: 60px;"></i>
   </div>
 </div>

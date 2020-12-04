@@ -11,6 +11,8 @@ export class HomeComponent implements OnInit {
 
   mini: any =[];
 
+  feedback = "";
+
   constructor(
     private http: HttpClient,
     private messageService: MessageService
@@ -24,7 +26,8 @@ export class HomeComponent implements OnInit {
   }
 
   showResponse(event) {
-    this.messageService.add({ severity: 'info', summary: 'Succees', detail: 'User Responded', sticky: true });
+    this.messageService.add({ severity: 'info', summary: 'Succees', detail: 'Seu feedback foi enviado!', sticky: true });
+    this.feedback = "";
   }
 
   ngOnInit(): void {
