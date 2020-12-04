@@ -20,6 +20,7 @@ import { RatingModule } from 'primeng/rating';
 import { CaptchaModule } from 'primeng/captcha';
 import { FieldsetModule } from 'primeng/fieldset';
 import { GMapModule } from 'primeng/gmap';
+import { CardModule } from 'primeng/card';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -76,7 +77,8 @@ const routes: Routes = [
     RatingModule,
     CaptchaModule,
     FieldsetModule,
-    GMapModule
+    GMapModule,
+    CardModule
   ],
   providers: [ConfirmationService, MessageService],
   bootstrap: [AppComponent]
