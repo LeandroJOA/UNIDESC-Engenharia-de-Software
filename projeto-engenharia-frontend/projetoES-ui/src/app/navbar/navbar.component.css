@@ -33,7 +33,7 @@
 
 .navbar-usuario{
   padding: 15px;
-  margin-bottom: 15px;
+
   border-bottom:1px solid #e9e3e3;
 
   text-align: center;
@@ -46,17 +46,25 @@
 .navbar-menuitem{
   padding: 15px;
   font-weight: bold;
+  transition: 0.5s;
 }
 
 .navbar-menuitem a{
   color: #c0bbb7;
   text-decoration: none;
   font-weight: bold;
+  transition: 0.5s;
  }
 
  .navbar-menuitem a:hover{
-   color: #fff;
-
+  color: #fff;
+  transition: opacity 0.2s;
+  background-color: rgba(58, 54, 51, .5);
  }
+
+  .navbar-menuitem:hover{
+    background-color: rgba(58, 54, 51, .5);
+  }
+
 
 

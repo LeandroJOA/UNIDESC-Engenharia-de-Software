@@ -24,10 +24,6 @@ div {
   margin: 10px 0px 10px 0px;
 }
 
-.ui-dropdown .ui-dropdown-label-container {
-    width: 100% !important;
-}
-
 a {
   text-decoration: none;
 }
@@ -37,18 +33,3 @@ a {
   margin-top: -10px;
 }
 
-.interface {
-  height: 925px;
-  width: 61%;
-  background-color: white;
-  margin: 0px auto auto auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  padding: 10px;
-}
-
-p-rating-cancel {
-    display:none;
-    width:0;
-    height:0;
-    overflow:hidden;
-}

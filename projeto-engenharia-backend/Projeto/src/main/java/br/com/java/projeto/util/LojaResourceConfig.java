@@ -8,10 +8,10 @@ import javax.ws.rs.ApplicationPath;
 // http://localhost:8080/Projeto/rest
 @ApplicationPath("rest")
 //Classe para configuração dos recursos do Jersey
-public class DrogariaResourceConfig extends ResourceConfig {
+public class LojaResourceConfig extends ResourceConfig {
 
     //Utilização do metodo construtor para indicar pacote com os serviços da aplicação
-    public DrogariaResourceConfig() {
+    public LojaResourceConfig() {
         packages("br.com.java.projeto.service");
     }
 }

@@ -12,25 +12,9 @@
   background:#ECECEC;
 }
 
-.footer {
-  clear: both;
-  position: relative;
-  height: 100px;
-  margin-top: -10px;
-  background-color: #1e94d2;
-}
-
-.sociais  {
-  justify-content: center;
-  text-align: center;
-}
 
 .introducao {
   font-size: 20px;
-}
-
-.componentes {
-  background-color: white;
 }
 
 .card-img {
