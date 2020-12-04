@@ -6,8 +6,8 @@
 
 | Produto List  | Produto Form  |
 | ------------- | ------------- |
-| <img src="https://i.imgur.com/NaTqQ0q.png">  | <img src="https://i.imgur.com/Tjts06g.png">  |
+| <img src="https://i.imgur.com/CLTlZ9Q.png">  | <img src="https://i.imgur.com/8LBSxeP.png">  |
 
 | Fornec. List  | Fornec. Form  |
 | ------------- | ------------- |
-| <img src="https://i.imgur.com/FCyuBrT.png">  | <img src="https://i.imgur.com/dhHdrMa.png">  |
+| <img src="https://i.imgur.com/FB70crk.png">  | <img src="https://i.imgur.com/yCQh4wr.png">  |
