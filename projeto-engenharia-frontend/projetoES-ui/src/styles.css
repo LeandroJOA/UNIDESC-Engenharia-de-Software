@@ -46,4 +46,9 @@ a {
   padding: 10px;
 }
 
-
+p-rating-cancel {
+    display:none;
+    width:0;
+    height:0;
+    overflow:hidden;
+}

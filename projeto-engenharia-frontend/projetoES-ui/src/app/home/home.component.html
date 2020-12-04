@@ -2,6 +2,14 @@
 
 <div class="container">
   <div class="p-grid">
+    <div class="p-col-12">
+      <h2 style="text-align: center;">Seja Bem-Vindo</h2>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div class="p-grid">
     <div class="p-col-3"></div>
     <div class="p-col-6">
       <p-carousel class="slides-wrapper" [value]="mini" [autoplayInterval]="3000" [circular]="true">
@@ -19,7 +27,35 @@
     </div>
     <div class="p-col-3"></div>
   </div>
+</div> -->
+
+<div class="container">
+  <div class="p-grid p-ai-center">
+    <div class="p-col-6">
+      <h3 class="tituloCarrosel">Edições Especiais!</h3>
+      <p-carousel class="slides-wrapper" [value]="mini" [autoplayInterval]="3000" [circular]="true">
+        <ng-template #item let-item let-i="index" let-mini pTemplate="mini">
+          <div>
+            <img class="items" [src]="mini.name">
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+    <div class="p-col-6">
+      <p-fieldset>
+        <p-header style="font-weight: bold;">Sobre Nós</p-header>
+        <span class="introducao">
+          Somos uma empresa consolidada no ramo de miniaturas automobilisticas há mais de 20 anos, possuimos em nosso
+          estoque os mais eximios exemplares, somando mais de 1001 modelos distintos!
+          <br>Estamos prontos para lhe atender!
+          <br>
+        </span>
+
+      </p-fieldset>
+    </div>
+  </div>
 </div>
+
 
 <div class="container">
   <div class="p-grid p-fluid">
@@ -31,7 +67,7 @@
       <p-captcha siteKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></p-captcha>
     </div>
     <div class="p-col-9" style="padding-left: 40px;">
-      <p-rating cancel="true"></p-rating>
+      <p-rating></p-rating>
     </div>
     <div class="p-col-5" style="margin-top: -10px;">
       <button pButton label="Enviar feedback" (click)="showResponse($event)"></button>
@@ -39,10 +75,3 @@
   </div>
 </div>
 
-
-<div class="footer">
-  <div class="sociais">
-    <i class="pi pi-github" style="font-size: 60px;"></i>
-    <i class="pi pi-discord" style="font-size: 60px;"></i>
-  </div>
-</div>

@@ -18,6 +18,8 @@ import { CarouselModule } from 'primeng/carousel';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { RatingModule } from 'primeng/rating';
 import { CaptchaModule } from 'primeng/captcha';
+import { FieldsetModule } from 'primeng/fieldset';
+import { GMapModule } from 'primeng/gmap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -72,7 +74,9 @@ const routes: Routes = [
     CarouselModule,
     InputNumberModule,
     RatingModule,
-    CaptchaModule
+    CaptchaModule,
+    FieldsetModule,
+    GMapModule
   ],
   providers: [ConfirmationService, MessageService],
   bootstrap: [AppComponent]
